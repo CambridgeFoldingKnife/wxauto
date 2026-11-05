@@ -1,0 +1,66 @@
+/* ============ E · 极简数据风 ============
+   白底无卡片 / 超大编号 / 细线分隔 / 单一强调色
+   只覆盖 _base.css，不动 deck.json
+*/
+:root{
+  --brand:#0FA3A3; --navy:#12181F; --ink:#1B232B; --ink-2:#7A8794; --line:#EDF1F4;
+  --bg1:#FBFCFD; --bg2:#FBFCFD;
+}
+.card{ background:#FBFCFD; padding:40px 52px 28px; }
+.card::before{ border-color:rgba(15,163,163,.06); }
+
+/* 顶栏 */
+.pill{ height:42px; padding:0 16px; font-size:19px; border-radius:2px; letter-spacing:2px; }
+.pill-solid{ background:var(--navy); color:#fff; box-shadow:none; }
+.pill-line{ background:transparent; border:1px solid var(--line); color:var(--ink-2); font-weight:400; height:40px; }
+.pageno{ width:auto; height:auto; background:none; border:none; border-radius:0;
+  color:var(--ink-2); font-size:52px; font-weight:300; line-height:1; font-family:Georgia,serif; }
+
+/* 标题：左对齐、细副标题 */
+.head{ text-align:left; }
+.title{ text-align:left; padding:0; letter-spacing:-1px; color:var(--navy); }
+.title em{ color:var(--brand); }
+.subbar{ display:block; margin-top:6px; padding:0; background:none; border:none; border-radius:0;
+  color:var(--ink-2); font-size:19px; font-weight:500; letter-spacing:5px; }
+
+/* 装饰字全部隐藏，留白给数字 */
+.side-left,.side-right{ display:none; }
+
+/* 面板：去掉卡片感 */
+.panel{ background:transparent; border:none; box-shadow:none; padding:0; }
+.panel-head{ font-size:24px; letter-spacing:4px; color:var(--ink-2); font-weight:600; }
+.panel-head i{ width:6px; height:24px; border-radius:0; background:var(--brand); }
+.panel-sub{ color:var(--ink-2); font-size:20px; }
+
+/* 分级：超大编号当视觉主体 */
+.grade .num{ background:none; color:#DCE3E9; width:auto; height:auto;
+  font-size:44px; font-weight:800; line-height:1; font-family:Georgia,serif; }
+.grade .angle{ background:none; color:var(--navy); font-size:26px; padding:0; border-radius:0; }
+.grade + .grade{ border-left:1px solid var(--line); }
+.tri{ display:none; }
+.grade .name{ font-size:25px; }
+.grade .range{ font-size:19px; }
+
+/* 内容块：去底色，用线 */
+.statement{ background:none; border-radius:0; border-left:3px solid var(--brand); padding-left:22px; }
+.measure{ background:none; border:none; border-top:1px solid var(--line); border-radius:0; padding:14px 0 0; }
+.cell,.entry,.checklist,.numcol,.summary .sblock{ background:transparent; border:1px solid var(--line);
+  border-radius:2px; box-shadow:none; }
+.cell .badge,.numcol .nbadge,.summary .snum{ background:var(--navy); border-radius:0; }
+.warn{ background:#FFF8F7; border:1px solid #FFDCD7; border-radius:2px; }
+
+/* 金句条：纯深色块 */
+.keybar{ background:var(--navy); border-radius:0; }
+.keybar .ktext .k1{ color:#3FD0C9; }
+.keybar .kfoot .dash{ background:rgba(255,255,255,.35); }
+.foot{ border-top:1px solid var(--line); }
+
+/* 列被拉高时用更大的示意图撑住，避免下半截空 */
+.grade .figrow img,
+.grade .body{ height: 330px; width: auto; }
+.grade img.pelvis{ width: 120px; height: 90px; }
+/* 角度做成主数字 */
+.grade .angle{ font-size: 30px; font-weight: 800; letter-spacing: -0.5px; }
+
+/* 列内内容撑开分布，避免下半截堆在底部留一大块空 */
+.body > .panel > .grade{ justify-content: space-between; padding: 6px 4px 0; }

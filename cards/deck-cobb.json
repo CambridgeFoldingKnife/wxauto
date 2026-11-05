@@ -1,0 +1,358 @@
+{
+  "meta": {
+    "slug": "cobb-angle",
+    "topic": "脊柱侧弯 Cobb角",
+    "series": "脊柱侧弯评估 ｜ Cobb角解读",
+    "category": "治疗师必看",
+    "sideRight": "早评估<br>早干预<br>助力更好功能",
+    "sideKey": "以专业<br>守护每一份挺拔",
+    "keyFoot": "科学评估 · 个体化干预 · 改善功能 · 提升生活质量",
+    "watermark": "健衡学园 · 康复科普"
+  },
+  "cards": [
+    {
+      "page": "01",
+      "titleSize": 68,
+      "title": "脊柱侧弯<em>严重程度评估</em><br>Cobb角<em>测量与分级标准</em>",
+      "titlePlain": "脊柱侧弯严重程度评估",
+      "subbar": "治疗师临床解读 ｜ 测量方法 · 分级标准 · 干预决策",
+      "key": "Cobb角是诊断起点，不是全部结论",
+      "keySize": 33,
+      "blocks": [
+        {
+          "module": "compare-grid",
+          "data": {
+            "head": "Cobb角严重程度对照",
+            "sub": "根据Cobb角大小评估脊柱侧弯严重程度",
+            "columns": [
+              { "num": "1", "angle": "10°<br>以下", "name": "正常", "range": "Cobb角 &lt; 10°", "figure": "body-normal", "spine": "normal", "pelvis": true },
+              { "num": "2", "angle": "11°<br>20°", "name": "轻度侧弯", "range": "Cobb角 11°–20°", "figure": "body-mild", "spine": "mild", "pelvis": true },
+              { "num": "3", "angle": "21°<br>40°", "name": "中度侧弯", "range": "Cobb角 21°–40°", "figure": "body-moderate", "spine": "moderate", "pelvis": true },
+              { "num": "4", "angle": "41°<br>以上", "name": "重度侧弯", "range": "Cobb角 ≥ 41°", "figure": "body-severe", "spine": "severe", "pelvis": true }
+            ]
+          }
+        },
+        {
+          "module": "entry-row",
+          "data": {
+            "entries": [
+              { "icon": "?", "title": "什么是<br>Cobb角？", "desc": "定义、意义及<br>临床应用" },
+              { "icon": "lung", "title": "怎么测<br>才准确？", "desc": "测量步骤、<br>关键要点与常见误区" },
+              { "icon": "clip", "title": "分级后如何<br>判断干预方向？", "desc": "从评估到治疗的<br>临床思路" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "page": "02",
+      "titleSize": 62,
+      "title": "Cobb角，<em>到底在测什么？</em>",
+      "titlePlain": "Cobb角到底在测什么",
+      "subbar": "治疗师临床基础 ｜ 定义 · 阈值 · 应用",
+      "key": "Cobb角是量化侧弯严重程度的基础语言",
+      "keySize": 30,
+      "blocks": [
+        {
+          "module": "split-figure",
+          "data": {
+            "head": "什么是 Cobb角？",
+            "body": "Cobb角是通过<em>站立位脊柱 X 线</em>测量脊柱侧向弯曲角度的标准指标，用于评估脊柱侧弯的严重程度。",
+            "noteTitle": "测量方法",
+            "note": "在 X 线片上确定弯曲上、下端椎的终板，分别作两条与终板平行的直线，再作两条垂线，两条垂线的夹角即为 Cobb角。",
+            "figure": "xray-spine",
+            "figCaption": "侧弯示意图"
+          }
+        },
+        {
+          "module": "quad-cards",
+          "data": {
+            "cells": [
+              { "badge": "01", "title": "国际通用指标", "desc": "临床评估脊柱侧弯最常用的量化指标。" },
+              { "badge": "02", "title": "诊断阈值", "desc": "一般 ≥ 10° 才进入诊断讨论；&lt; 10° 更倾向观察。" },
+              { "badge": "03", "title": "主要用途", "desc": "用于初筛、分级、随访与干预前后比较。" },
+              { "badge": "04", "title": "临床提醒", "desc": "重要，但不能替代完整的三维评估。" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "page": "03",
+      "titleSize": 72,
+      "title": "怎么测，<em>才叫规范？</em>",
+      "titlePlain": "怎么测才叫规范",
+      "subbar": "标准流程 ｜ 拍片 · 找端椎 · 画线 · 测角",
+      "key": "规范的前提是同一体位、同一端椎、同一种画法",
+      "keySize": 31,
+      "blocks": [
+        {
+          "module": "split-figure",
+          "data": {
+            "head": "标准流程，四步做完",
+            "body": "规范的 Cobb角 测量，靠的不是算得准，而是<em>从头到尾条件一致</em>。",
+            "noteTitle": "三同原则",
+            "note": "同一体位、同一端椎、同一种画法——复查时尤其要守住。",
+            "figure": "xray-spine",
+            "figCaption": "端椎与终板"
+          }
+        },
+        {
+          "module": "numbered-cols",
+          "data": {
+            "cols": [
+              { "n": "01", "title": "标准拍片", "desc": "站立位全脊柱正位片，包含双侧髂嵴，避免体位旋转。" },
+              { "n": "02", "title": "找上下端椎", "desc": "取弯曲两端倾斜最大的椎体，其终板最接近平行于水平面。" },
+              { "n": "03", "title": "画线测角", "desc": "沿上下端椎终板各画一条线，两条垂线的夹角即为 Cobb角。" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "page": "04",
+      "titleSize": 70,
+      "title": "端椎选错，<em>角度就偏了</em>",
+      "titlePlain": "端椎选错角度就偏了",
+      "subbar": "常见误差 ｜ 体位 · 端椎判断 · 影像条件",
+      "key": "同一个患者，换个端椎，结果可能差出好几度",
+      "keySize": 30,
+      "blocks": [
+        {
+          "module": "split-figure",
+          "data": {
+            "head": "端椎为什么这么关键",
+            "body": "端椎是 Cobb角 测量的<em>起点</em>。起点错了，后面全错。",
+            "noteTitle": "怎么找端椎",
+            "note": "取弯曲两端倾斜最大的椎体，其终板最接近水平，且相邻椎间隙上下等宽。",
+            "figure": "xray-spine",
+            "figCaption": "端椎与终板"
+          }
+        },
+        {
+          "module": "warning-bar",
+          "data": {
+            "text": "体位旋转、端椎判断不一致、影像条件差，都会让角度偏移。复查时务必保持与首次相同的条件。"
+          }
+        }
+      ]
+    },
+    {
+      "page": "05",
+      "titleSize": 74,
+      "title": "Cobb角的<em>临床意义</em>",
+      "titlePlain": "Cobb角的临床意义",
+      "subbar": "不只是一个角度数值",
+      "key": "Cobb角很重要，但它只是评估的一部分",
+      "keySize": 31,
+      "blocks": [
+        {
+          "module": "split-figure",
+          "data": {
+            "head": "它到底说明了什么",
+            "body": "Cobb角描述的是<em>弯曲的程度</em>，不是疼痛、不是功能，也不是生活质量。",
+            "noteTitle": "临床用法",
+            "note": "用来分级、用来随访、用来和医生与家长对齐认知。",
+            "figure": "figure-back",
+            "figCaption": "背视示意"
+          }
+        },
+        {
+          "module": "numbered-cols",
+          "data": {
+            "cols": [
+              { "n": "01", "title": "看严重程度", "desc": "轻度、中度、重度分级，帮助快速判断侧弯水平。" },
+              { "n": "02", "title": "看趋势与风险", "desc": "数值越大，通常越需要重视进展风险与随访节奏。" },
+              { "n": "03", "title": "看沟通基础", "desc": "帮助治疗师、医生与家长形成共同语言，但不是唯一依据。" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "page": "06",
+      "titleSize": 64,
+      "title": "为什么<em>不能只看一个角？</em>",
+      "titlePlain": "为什么不能只看一个角",
+      "subbar": "冠状面之外 ｜ 旋转 · 矢状面 · 体表 · 功能",
+      "key": "Cobb角反映的是弯曲程度，不等于全部临床状态",
+      "keySize": 28,
+      "blocks": [
+        {
+          "module": "split-figure",
+          "data": {
+            "head": "它只能说明一部分",
+            "body": "Cobb角主要反映<em>冠状面</em>的侧向弯曲。椎体旋转、矢状面形态、体表外观与功能表现，都需要单独评估。",
+            "noteTitle": "别漏掉这些",
+            "note": "椎体旋转度（如 Nash-Moe）、矢状面平衡、Risser 征（骨骼成熟度）、体表旋转与功能状态。",
+            "figure": "figure-back",
+            "figCaption": "背视示意"
+          }
+        }
+      ]
+    },
+    {
+      "page": "07",
+      "titleSize": 60,
+      "title": "动态监测，<em>比单次数字更重要</em>",
+      "titlePlain": "动态监测比单次数字更重要",
+      "subbar": "看趋势 ｜ 而不是盯一次结果",
+      "key": "真正要看的是趋势，而不是一次数字",
+      "keySize": 32,
+      "blocks": [
+        {
+          "module": "split-figure",
+          "data": {
+            "head": "一次是横截面，连续才是轨迹",
+            "body": "单次测量只能告诉你<em>此刻在哪</em>，连续复查才能看出<em>往哪走</em>。",
+            "noteTitle": "看什么",
+            "note": "看角度变化的速度，而不是绝对值；快速增长比大角度更值得警惕。",
+            "figure": "figure-back",
+            "figCaption": "动态监测"
+          }
+        },
+        {
+          "module": "checklist",
+          "data": {
+            "title": "复查时尽量保持一致",
+            "items": [
+              "同一拍片体位与站立方式",
+              "同一端椎判断标准",
+              "相近的复查间隔",
+              "记录生长速度与月经初潮等节点",
+              "同时记录体表与功能变化",
+              "出现快速进展及时转诊"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "page": "08",
+      "titleSize": 66,
+      "title": "数字如何<em>参与临床决策？</em>",
+      "titlePlain": "数字如何参与临床决策",
+      "subbar": "综合判断 ｜ 成熟度 · 类型 · 症状 · 功能",
+      "key": "Cobb角是锚点，但不是判决书",
+      "keySize": 32,
+      "blocks": [
+        {
+          "module": "split-figure",
+          "data": {
+            "head": "先看数字，再问四个问题",
+            "body": "同样一个角度，<em>放在不同的人身上，意义完全不同</em>。",
+            "noteTitle": "决策逻辑",
+            "note": "角度只是入口，真正决定方案的是成熟度、类型、症状与进展速度。",
+            "figure": "figure-back",
+            "figCaption": "综合评估"
+          }
+        },
+        {
+          "module": "quad-cards",
+          "data": {
+            "cells": [
+              { "badge": "01", "title": "骨骼成熟度", "desc": "Risser 征越低，剩余生长潜力越大。" },
+              { "badge": "02", "title": "侧弯类型", "desc": "主弯位置与代偿弯决定干预策略。" },
+              { "badge": "03", "title": "症状与功能", "desc": "疼痛、耐力、日常活动受影响程度。" },
+              { "badge": "04", "title": "进展速度", "desc": "短期内角度变化比绝对值更能提示风险。" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "page": "09",
+      "titleSize": 64,
+      "title": "治疗师<em>到底该记住什么？</em>",
+      "titlePlain": "治疗师到底该记住什么",
+      "subbar": "治疗师总结收藏页 ｜ 定义 × 测量 × 分级 × 监测 × 决策",
+      "key": "标准测量看角度，综合评估看患者，动态复查看趋势",
+      "keySize": 26,
+      "blocks": [
+        {
+          "module": "split-figure",
+          "data": {
+            "head": "三句话总结这一整套",
+            "body": "<em>标准测量看角度，综合评估看患者，动态复查看趋势。</em>",
+            "noteTitle": "核心",
+            "note": "量角度只是基本功，看懂趋势和综合评估才是核心。",
+            "figure": "figure-back",
+            "figCaption": "综合评估"
+          }
+        },
+        {
+          "module": "summary-grid",
+          "data": {
+            "items": [
+              { "n": "01", "title": "先明确定义", "desc": "Cobb角是评估侧弯严重程度的核心角度指标，但只是评估的一部分。" },
+              { "n": "02", "title": "测量必须标准", "desc": "规范站立位影像，正确选择上下端椎，再沿终板作线测量夹角。" },
+              { "n": "03", "title": "分级要会看", "desc": "轻度、中度、重度是沟通工具，不能代替完整临床判断。" },
+              { "n": "04", "title": "不能只看一个角", "desc": "还要结合体表、旋转、骨龄、生长潜力、症状与进展趋势。" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "page": "10",
+      "titleSize": 74,
+      "title": "这一页，<em>值得收藏</em>",
+      "titlePlain": "这一页值得收藏",
+      "subbar": "临床决策提示 ｜ 四个问题问自己",
+      "key": "评估更全面，康复更有效",
+      "keySize": 34,
+      "blocks": [
+        {
+          "module": "split-figure",
+          "data": {
+            "head": "把这一页存下来",
+            "body": "下次量完角度，<em>先问自己四个问题</em>。",
+            "noteTitle": "怎么用",
+            "note": "把角度翻译成患者和家长能理解的语言，比报一个数字更有价值。",
+            "figure": "figure-back",
+            "figCaption": "临床决策"
+          }
+        },
+        {
+          "module": "summary-grid",
+          "data": {
+            "items": [
+              { "n": "05", "title": "动态监测决定临床价值", "desc": "复查保持一致条件与方法，关注变化趋势。" },
+              { "n": "06", "title": "沟通同样重要", "desc": "把角度翻译成患者和家长能理解的语言。" }
+            ]
+          }
+        },
+        {
+          "module": "checklist",
+          "data": {
+            "title": "临床决策四问",
+            "items": [
+              "是否达到诊断与分级参考范围",
+              "是否存在进展风险",
+              "是否需要进一步影像或评估",
+              "是否需要训练、支具或转诊配合"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "caption": {
+    "dataSource": "参考：SOSORT 等脊柱侧弯相关指南与共识",
+    "hook": "脊柱侧弯评估里，Cobb角几乎绕不开，但会量角度 ≠ 会做临床判断。这套图把测量、分级、动态监测和决策逻辑一次讲清👇",
+    "hashtags": ["#脊柱侧弯", "#Cobb角", "#施罗斯", "#脊柱侧弯康复", "#康复治疗师", "#物理治疗", "#体态评估", "#青少年脊柱侧弯"],
+    "tour": [
+      { "n": "1", "text": "先认识 Cobb角：它是量化侧弯程度的重要指标，但只是综合评估的一部分。" },
+      { "n": "2", "text": "到底测什么：站立位全脊柱 X 线，≥10° 作为重要诊断阈值。" },
+      { "n": "3", "text": "怎么测才规范：标准拍片 → 找上下端椎 → 画终板线 → 测夹角。" },
+      { "n": "4", "text": "端椎选错，角度就可能偏。" },
+      { "n": "5", "text": "分级怎么看：＜10°、10°–24°、25°–40°、＞40°，重点各不同。" },
+      { "n": "6", "text": "为什么不能只看 Cobb角。" },
+      { "n": "7", "text": "动态监测更重要：看趋势，不看单次。" },
+      { "n": "8", "text": "数字如何参与决策。" },
+      { "n": "9-10", "text": "治疗师总结：标准测量看角度，综合评估看患者，动态复查看趋势。" }
+    ],
+    "summary": "量角度只是基本功，看懂趋势和综合评估才是核心。Cobb角是重要的“锚点”，但必须结合 Risser 征、椎体旋转度和患者功能状态。",
+    "cta": "如果你希望系统学习侧弯评估与治疗逻辑，欢迎关注我们的后续课程。"
+  }
+}

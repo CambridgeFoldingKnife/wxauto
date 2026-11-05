@@ -1,0 +1,70 @@
+/* ============ A · 学术文献风 ============
+   白底 / 宋体标题 / 左对齐 / 细线分栏 / 无渐变无圆角
+   只覆盖 _base.css，不动 deck.json
+*/
+:root{
+  --brand:#2E7D8F; --brand-d:#24646F; --navy:#1A2B4A; --navy-l:#2E4A6B;
+  --ink:#1F2937; --ink-2:#6B7C93; --line:#E3E8EF; --card:#fff;
+  --bg1:#ffffff; --bg2:#ffffff;
+}
+html,body{ background:#fff; }
+.card{ background:#fff; padding:44px 54px 28px; }
+.card::before{ display:none; }
+
+/* 顶栏：方角描边 */
+.pill{ height:46px; padding:0 18px; font-size:21px; border-radius:0; letter-spacing:2px; }
+.pill-solid{ background:none; color:var(--navy); border:1.5px solid var(--navy); box-shadow:none; }
+.pill-line{ background:#fff; border:1px solid var(--line); color:var(--ink-2); font-weight:400; height:44px; }
+.pageno{ width:auto; height:auto; border:none; border-radius:0; background:none;
+  font-family:Georgia,"Times New Roman",serif; font-size:26px; color:var(--ink-2); font-weight:400; }
+.pageno::before{ content:"CARD "; font-size:14px; letter-spacing:2px; }
+
+/* 标题：宋体 + 左对齐 */
+.head{ text-align:left; }
+.title{ font-family:"SimSun","宋体",serif; font-weight:700; text-align:left;
+  padding:0; letter-spacing:0; line-height:1.3; color:var(--navy); }
+.title em{ color:var(--brand); }
+.subbar{ display:block; margin-top:12px; padding:10px 0 0; border-radius:0;
+  background:none; border:none; border-top:2px solid var(--navy);
+  color:var(--ink-2); font-size:20px; font-weight:400; letter-spacing:1px; }
+
+/* 侧边 */
+.side-left{ color:#A6B2C0; }
+.side-left::after{ background:#A6B2C0; }
+.side-right{ color:var(--ink-2); font-style:normal; font-weight:400; transform:none; }
+
+/* 面板：细框、无阴影 */
+.panel{ border:1px solid var(--line); border-radius:2px; box-shadow:none; background:#fff; }
+.panel-head{ font-family:"SimSun",serif; font-size:33px; letter-spacing:0; }
+.panel-head i{ width:4px; height:31px; border-radius:0; background:var(--navy); }
+.panel-sub{ color:var(--ink-2); }
+
+/* 内容块 */
+.statement{ background:#F7F9FB; border-radius:0; border-left:4px solid var(--brand); }
+.measure{ background:#FBFCFD; border:1px solid var(--line); border-left:3px solid var(--brand); border-radius:2px; }
+.measure .mt{ color:var(--ink-2); letter-spacing:2px; }
+.cell,.entry,.checklist,.numcol,.summary .sblock{ border-radius:2px; border:1px solid var(--line); box-shadow:none; }
+.cell .badge,.numcol .nbadge,.summary .snum{ background:var(--navy); border-radius:0; }
+.warn{ border-radius:2px; }
+.checklist li::before{ background:var(--brand); }
+
+/* 分级：数字改宋体 + 下划线，去掉圆点和箭头 */
+.grade .num{ background:none; color:var(--navy); border-radius:0;
+  border-bottom:2px solid var(--navy); font-family:Georgia,serif; }
+.grade .angle{ border-radius:2px; }
+.tri{ display:none; }
+
+/* 金句条：浅灰块 + 左侧粗线 */
+.keybar{ background:#F4F6F8; color:var(--navy); border-left:8px solid var(--navy); border-radius:0; }
+.keybar .ktext .k1{ color:var(--brand-d); }
+.keybar .kside{ color:var(--ink-2); }
+.keybar .kico rect{ fill:var(--navy); }
+.keybar .kfoot{ color:var(--ink-2); }
+.keybar .kfoot .dash{ background:#C3CCD8; }
+
+.foot{ color:#A6B2C0; border-top:1px solid var(--line); }
+
+/* 左对齐标题需要整行宽度，装饰字隐藏 */
+.side-left,.side-right{ display:none; }
+/* CARD 与页码之间留空 */
+.pageno::before{ display:inline-block; padding-right:8px; }

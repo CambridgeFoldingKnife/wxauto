@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../_base.css">
+<link rel="stylesheet" href="{{THEME_CSS}}">
+<title>{{PAGE}} {{TITLE_PLAIN}}</title>
+</head>
+<body>
+<div class="card">
+
+  <header class="top">
+    <div class="pill pill-solid"><span class="star">★</span>{{CATEGORY}}</div>
+    <div class="top-right">
+      <div class="pill pill-line">{{SERIES}}</div>
+      <div class="pageno">{{PAGE}}</div>
+    </div>
+  </header>
+
+  <div class="side-left">BETTER<br>FUNCTION<br>BRIGHTER<br>TOMORROW</div>
+  <div class="side-right">{{SIDE_RIGHT}}</div>
+
+  <div class="head">
+    <h1 class="title" style="font-size:{{TITLE_SIZE}}px">{{TITLE_HTML}}</h1>
+    <div class="subbar">{{SUBBAR}}</div>
+  </div>
+
+  <div class="body">
+{{BODY}}
+  </div>
+
+  <div class="keybar">
+    <div class="krow">
+      <svg class="kico" width="42" height="64" viewBox="0 0 42 64">
+        <rect x="15" y="0"  width="16" height="8" rx="4" fill="#fff"/>
+        <rect x="12" y="9"  width="22" height="8" rx="4" fill="#fff"/>
+        <rect x="15" y="18" width="16" height="8" rx="4" fill="#fff"/>
+        <rect x="12" y="27" width="22" height="8" rx="4" fill="#fff"/>
+        <rect x="15" y="36" width="16" height="8" rx="4" fill="#fff"/>
+        <rect x="12" y="45" width="22" height="8" rx="4" fill="#fff"/>
+        <rect x="15" y="54" width="16" height="8" rx="4" fill="#fff"/>
+      </svg>
+      <div class="ktext" style="font-size:{{KEY_SIZE}}px"><span class="k1">核心：</span>{{KEY_TEXT}}</div>
+      <div class="kside">{{SIDE_KEY}}</div>
+    </div>
+    <div class="kfoot">
+      <span class="dash"></span>{{KEY_FOOT}}<span class="dash"></span>
+    </div>
+  </div>
+
+  <div class="foot">REHABILITATION &nbsp; MAKES &nbsp; A &nbsp; BETTER &nbsp; TOMORROW</div>
+
+  <svg class="wm-tile" viewBox="0 0 1086 1448" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <pattern id="wmP" width="540" height="400" patternUnits="userSpaceOnUse" patternTransform="rotate(-24)">
+        <text x="0" y="200" font-family="微软雅黑, Microsoft YaHei, sans-serif" font-size="32" font-weight="700" fill="#16375f" fill-opacity="0.05">{{WATERMARK}}</text>
+      </pattern>
+    </defs>
+    <rect width="1086" height="1448" fill="url(#wmP)"/>
+  </svg>
+
+  <div id="__ovf"></div>
+</div>
+<script>
+  window.addEventListener('load', function () {
+    var bodyEl = document.querySelector('.body');
+    var over = bodyEl.scrollHeight - bodyEl.clientHeight;
+    var c = document.querySelector('.card');
+    var overCard = c.scrollHeight - c.clientHeight;
+    var kids = Array.prototype.slice.call(bodyEl.children);
+    var sum = kids.reduce(function (a, e) { return a + e.getBoundingClientRect().height; }, 0);
+    var gaps = Math.max(0, kids.length - 1) * 16;
+    var slack = Math.round(bodyEl.clientHeight - sum - gaps);
+    var panelOver = 0;
+    Array.prototype.forEach.call(document.querySelectorAll('.panel'), function (p) {
+      panelOver = Math.max(panelOver, p.scrollHeight - p.clientHeight);
+    });
+    document.getElementById('__ovf').textContent =
+      'OVF=' + over + ' CARD=' + overCard + ' SLACK=' + slack + ' PANEL=' + panelOver;
+  });
+</script>
+</body>
+</html>

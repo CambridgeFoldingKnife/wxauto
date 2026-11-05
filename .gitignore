@@ -18,3 +18,9 @@ drafts/
 output/
 logs/
 *.log
+
+# 信息图流水线产物
+cards/out/
+cards/.build/
+cards/previews/*.html
+cards/previews/*.png
