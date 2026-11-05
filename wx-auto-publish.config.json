@@ -1,0 +1,15 @@
+{
+  "material_dir": "素材库",
+  "drafts_dir": "drafts",
+  "account": "jianheng-xueyuan",
+  "theme": "jianheng",
+  "default_author": "健衡学园",
+  "image": {
+    "style": "扁平插画风（医疗科普感）",
+    "preferred_backend": "auto",
+    "num_min": 3,
+    "num_max": 5,
+    "aspect_inline": "3:2",
+    "aspect_cover": "2.35:1"
+  }
+}

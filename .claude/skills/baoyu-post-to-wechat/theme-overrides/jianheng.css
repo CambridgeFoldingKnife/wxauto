@@ -1,0 +1,260 @@
+/**
+ * 健衡学园 自定义排版主题（jianheng）
+ * ─────────────────────────────────────────────
+ * 依据「健衡学园 / 健衡康复资讯」5 篇已发布文章实测提取：
+ *   • 品牌主色    青绿 rgb(50,175,175) = #32afaf
+ *   • 正文        15px / 行高 2em / rgba(0,0,0,.9) / 微软雅黑
+ *   • 章节主标题  青绿底白字长条（06: inline-block #32afaf + 白字 16px + letter-spacing 2px）
+ *   • 副标题      奶黄胶囊（rgb(255,250,233) 底 + 1px #32afaf 边 + radius 25px + 青绿字 16px）
+ *   • 要点小标题  左侧 4px 青绿竖线 + 青绿加粗 16px
+ *   • 金句/引用    奶黄底卡片 + 青绿左边框
+ *   • 表格        表头 #e5ebf1 / 边框 #e5e5e5
+ * 所有颜色均硬编码，不依赖 CSS 变量，保证内联后微信端 100% 还原。
+ */
+
+/* ==================== 基础 ==================== */
+#output,
+section,
+container,
+p,
+li,
+td,
+th {
+  font-family: "微软雅黑", "Microsoft YaHei", "PingFang SC",
+    "Helvetica Neue", "Hiragino Sans GB", Arial, sans-serif;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.9);
+  line-height: 2em;
+  letter-spacing: 0.5px;
+}
+
+/* 正文段落：两端对齐，段间留白 */
+p {
+  margin: 0.5em 0 0.5em;
+  text-align: justify;
+}
+
+/* ==================== 一级标题（大标题，如被保留时） ==================== */
+h1 {
+  display: table;
+  padding: 0 0.4em 0.4em;
+  border-bottom: 3px solid rgb(50, 175, 175);
+  margin: 0.8em auto 1em;
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* ==================== 二级标题：主章节标题 —— 青绿底白字长条 ==================== */
+h2 {
+  display: table;
+  padding: 6px 26px;
+  background: rgb(50, 175, 175);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 1.8;
+  text-align: center;
+  border-radius: 6px;
+  margin: 2.2em auto 1.2em;
+}
+
+/* ==================== 三级标题：副标题 —— 奶黄胶囊卡片 ==================== */
+h3 {
+  display: table;
+  padding: 8px 25px;
+  background: rgb(255, 250, 233);
+  border: 1px solid rgb(50, 175, 175);
+  border-radius: 25px;
+  color: #32afaf;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  line-height: 1.8;
+  text-align: center;
+  margin: 1.8em auto 0.9em;
+}
+
+/* ==================== 四级标题：要点小标题 —— 左侧青绿竖线 ==================== */
+h4 {
+  padding-left: 10px;
+  border-left: 4px solid rgb(50, 175, 175);
+  color: #32afaf;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  margin: 1.8em 0 0.6em;
+}
+
+/* ==================== 五六级标题 ==================== */
+h5,
+h6 {
+  color: #32afaf;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 1.5em 0 0.5em;
+}
+
+/* ==================== 引用 / 语录 / 品牌尾注 —— 奶黄卡片 ==================== */
+blockquote {
+  padding: 12px 16px;
+  background: rgb(255, 250, 233);
+  border: 1px solid rgb(50, 175, 175);
+  border-left: 4px solid rgb(50, 175, 175);
+  border-radius: 8px;
+  margin: 1.2em 0;
+}
+
+blockquote > p {
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  margin: 0;
+  text-align: justify;
+}
+
+/* ==================== 强调 ==================== */
+strong {
+  color: #32afaf;
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+/* ==================== 列表 ==================== */
+ol {
+  padding-left: 1.2em;
+  margin: 0.6em 0;
+}
+
+ul {
+  list-style: circle;
+  padding-left: 1.2em;
+  margin: 0.6em 0;
+}
+
+li {
+  display: block;
+  color: rgba(0, 0, 0, 0.9);
+  margin: 0.2em 0;
+}
+
+/* ==================== 表格（对比表/信息表） ==================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.2em 0;
+}
+
+thead {
+  font-weight: bold;
+}
+
+th {
+  border: 1px solid #e5e5e5;
+  padding: 8px 13px;
+  background: #e5ebf1;
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: bold;
+  font-size: 15px;
+  word-break: keep-all;
+  line-height: 1.8;
+}
+
+td {
+  border: 1px solid #e5e5e5;
+  padding: 8px 13px;
+  color: rgba(0, 0, 0, 0.9);
+  word-break: keep-all;
+  line-height: 1.8;
+}
+
+/* ==================== 图片（正文配图：通栏、无圆角、居中） ==================== */
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 1em auto;
+  border-radius: 4px;
+}
+
+figure {
+  margin: 1.2em 0;
+}
+
+figcaption,
+.md-figcaption {
+  text-align: center;
+  color: #888888;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* ==================== 分隔线 ==================== */
+hr {
+  border-style: solid;
+  border-width: 1px 0 0;
+  border-color: rgba(50, 175, 175, 0.35);
+  height: 0.4em;
+  margin: 1.5em auto;
+  width: 60%;
+}
+
+/* ==================== 行内代码 ==================== */
+code {
+  font-size: 90%;
+  color: #d14;
+  background: rgba(27, 31, 35, 0.05);
+  padding: 3px 5px;
+  border-radius: 4px;
+}
+
+pre.code__pre > code,
+.hljs.code__pre > code {
+  display: -webkit-box;
+  padding: 0.5em 1em 1em;
+  overflow-x: auto;
+  text-indent: 0;
+  color: inherit;
+  background: none;
+  white-space: nowrap;
+  margin: 0;
+}
+
+/* ==================== 链接与脚注 ==================== */
+a {
+  color: #576b95;
+  text-decoration: none;
+}
+
+p.footnotes {
+  margin: 0.5em 8px;
+  font-size: 80%;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+/* ==================== 标记高亮 ==================== */
+.markup-highlight {
+  background-color: rgb(50, 175, 175);
+  padding: 2px 4px;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.markup-underline {
+  text-decoration: underline;
+  text-decoration-color: rgb(50, 175, 175);
+}
+
+.markup-wavyline {
+  text-decoration: underline wavy;
+  text-decoration-color: rgb(50, 175, 175);
+  text-decoration-thickness: 2px;
+}

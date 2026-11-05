@@ -1,0 +1,52 @@
+# ============================================================================
+# 健衡学园 · 公众号流水线 Python 依赖
+# ----------------------------------------------------------------------------
+# 安装（★ 务必带 --index-url，默认镜像源常拉不到下列包）：
+#
+#     pip install --index-url https://pypi.org/simple --only-binary :all: -r requirements.txt
+#
+# 环境要求：Python 3.10+（本项目在 3.13 上验证通过）
+# 建议装进独立虚拟环境，避免污染系统 Python：
+#
+#     python -m venv .venv
+#     .venv\Scripts\python -m pip install --index-url https://pypi.org/simple --only-binary :all: -r requirements.txt
+#
+# 不想装即梦依赖？可只用通义万相后端（--backend qwen-wanxiang），
+# 那样只需装 pypdf（其余为即梦后端专用）。
+# ============================================================================
+
+
+# ── 即梦 / Seedream 生图后端（火山引擎）────────────────────────────────────
+# ★★★ 版本必须锁定，务必是 1.0.xxx，不要装 5.x ★★★
+#
+# 为什么不能装最新版：
+#   本仓库 backend_jimeng.py 用的是**旧式 API** ——
+#       volcengine.ApiInfo / volcengine.Credentials /
+#       volcengine.ServiceInfo / volcengine.base.Service
+#   而 volcengine-python-sdk **5.x 已移除顶层 volcengine 命名空间**
+#   （只剩 volcenginesdk* 子包），装它必然报：
+#       ModuleNotFoundError: No module named 'volcengine'
+#   更坑的是：5.x 的子包共享 volcengine 前缀，会让
+#   importlib.util.find_spec('volcengine') 返回非 None（假阳性），
+#   造成"检测显示已装、一运行就崩"的迷惑现象。
+#
+# 因此：包名是 volcengine（不是 volcengine-python-sdk），版本钉死 1.0.228。
+# 1.0.228 是当前可用的最高 1.0.x，带预编译 wheel，装得快。
+volcengine==1.0.228
+
+# 即梦后端内部用 requests 调火山 HTTP 接口
+requests>=2.31,<3
+
+# 即梦后端读 API 返回/本地配置用 yaml
+PyYAML>=6.0,<7
+
+
+# ── 素材库文档解析（可选，不投喂 Word/PDF 素材则用不到）──────────────────
+# 解析 素材库/ 下的 PDF（ingest-knowledge.py --topic / --extract）
+# 代码同时兼容旧库名 PyPDF2，二选一即可，这里锁新版
+pypdf>=4.0
+
+
+# ── 显式排除（防止装错，pip 装了下面这个会直接坏掉）────────────────────
+# 不要取消注释！此包与 backend_jimeng.py 不兼容：
+# volcengine-python-sdk
